@@ -1,13 +1,13 @@
 import React, {useState} from "react";
-import {Tilt} from "react-tilt";
+// import {Tilt} from "react-tilt";
 import { motion } from "framer-motion";
-import webdev from "../assets/webdev.png"
-import codeedit from "../assets/codeedit.svg"
-import das from "../assets/das.svg"
-import { styles } from "../styles";
+// import webdev from "../assets/webdev.png"
+// import codeedit from "../assets/codeedit.svg"
+// import das from "../assets/das.svg"
+// import { styles } from "../styles";
 // import { github } from "../assets";
-import { StarsCanvas } from "./canvas";
-import { SectionWrapper } from "../hoc";
+// import { StarsCanvas } from "./canvas";
+// import { SectionWrapper } from "../hoc";
 import { projects } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
 import { web } from "../../../project_3D_developer_portfolio/src/assets";
@@ -33,7 +33,7 @@ const ProjectCard = ({
     <motion.div onMouseOver={handleMouseOver}
     onMouseOut ={handleMouseOut} variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
       
-      <Tilt
+      <div
         options={{
           max: 45,
           scale: 1,
@@ -76,7 +76,7 @@ const ProjectCard = ({
           ))}
         </div> */}
 
-      </Tilt>
+      </div>
     </motion.div>
   );
 };
