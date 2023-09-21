@@ -1,5 +1,11 @@
 import { people01, people02, people03, facebook, instagram, linkedin, twitter, airbnb, binance, coinbase, dropbox, send, shield, star  } from "../assets";
-
+import icon11 from "../assets/icon_11.svg"
+import icon06 from "../assets/icon_06.svg"
+import icon13 from "../assets/icon_13.svg"
+import arrow from "../assets/arrow.svg"
+import webdev from "../assets/webdev.png"
+import codeedit from "../assets/codeedit.png"
+import das from "../assets/das.svg"
 export const navLinks = [
   {
     id: "home",
@@ -69,25 +75,107 @@ export const feedback = [
     img: people03,
   },
 ];
-
+export const services = [
+  {
+    title: "Web Developer",
+    // icon: web,
+  },
+  {
+    title: "React Native Developer",
+    // icon: mobile,
+  },
+  {
+    title: "Backend Developer",
+    icon: arrow,
+  },
+  {
+    title: "Content Creator",
+    // icon: creator,
+  },
+];
 export const stats = [
   {
     id: "stats-1",
-    title: "User Active",
-    value: "3800+",
+    title: "Afforable Services",
+ 
   },
-  {
-    id: "stats-2",
-    title: "Trusted by Company",
-    value: "230+",
-  },
+  // {
+  //   id: "stats-2",
+  //   title: "Safe and ",
+   
+   
+  // },
   {
     id: "stats-3",
-    title: "Transaction",
-    value: "$230M+",
+    title: "Quick Delivery & Set Up",
+    
   },
 ];
-
+export const projects = [
+  {
+    name: "Portfolio Websites",
+    description:
+      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "mongodb",
+        color: "green-text-gradient",
+      },
+      {
+        name: "tailwind",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: webdev,
+    source_code_link: "https://github.com/",
+  },
+  {
+    name: "Data Analytics",
+    description:
+      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "restapi",
+        color: "green-text-gradient",
+      },
+      {
+        name: "scss",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: das,
+    source_code_link: "https://github.com/",
+  },
+  {
+    name: "Code Editing",
+    description:
+      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+    tags: [
+      {
+        name: "nextjs",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "supabase",
+        color: "green-text-gradient",
+      },
+      {
+        name: "css",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: codeedit,
+    source_code_link: "https://github.com/",
+  },
+];
 export const footerLinks = [
   {
     title: "Useful Links",
@@ -151,6 +239,26 @@ export const footerLinks = [
         link: "https://www.hoobank.com/become-a-partner/",
       },
     ],
+  },
+];
+export const startingFeatures = [
+  'Find a world that suits you and you want to enter',
+  'Enter the world by reading basmalah to be safe',
+  'No need to beat around the bush, just stay on the gas and have fun',
+];
+
+export const newFeatures = [
+  {
+    imgUrl: '/vrpano.svg',
+    title: 'A new world',
+    subtitle:
+        'we have the latest update with new world for you to try never mind',
+  },
+  {
+    imgUrl: '/headset.svg',
+    title: 'More realistic',
+    subtitle:
+        'In the latest update, your eyes are narrow, making the world more realistic than ever',
   },
 ];
 

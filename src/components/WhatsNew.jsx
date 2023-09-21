@@ -3,8 +3,8 @@ import { newFeatures } from '../constants';
 import {TitleText, TypingText } from './CustomTexts';
 import { planetVariants, staggerContainer, fadeIn } from '../utils/motion';
 import {styles} from '../styles';
-import arrow2 from "../assets/arrow2.svg"
-
+import wpl from "../assets/whats-new.png"
+import analy from "../assets/analy.svg"
 const NewFeatures = ({ imgUrl, title, subtitle }) => (
   <div className="flex-1 flex flex-col sm:max-w-[250px] min-w-[210px]">
     <div
@@ -20,8 +20,8 @@ const NewFeatures = ({ imgUrl, title, subtitle }) => (
     </p>
   </div>
 );
-const CardDeal = () => (
-  <section className={`${styles.paddings}  pb-16 mb-16 z-10`}>
+const WhatsNew = () => (
+  <section className={`${styles.paddings} z-10`}>
     <motion.div
       variants={staggerContainer}
       initial="hidden"
@@ -44,16 +44,16 @@ const CardDeal = () => (
 
       <motion.div
         variants={planetVariants('right')}
-        className={`px-0 mx-0 flex-1 ${styles.flexCenter}`}
+        className={`flex-1 ${styles.flexCenter}`}
       >
         <img
-          src={arrow2}
+          src={analy}
           alt="get-started"
-          className="w-[100%] h-[100%] object-contain"
+          className="w-[90%] h-[90%] object-contain"
         />
       </motion.div>
     </motion.div>
   </section>
 );
 
-export default CardDeal;
+export default WhatsNew;
