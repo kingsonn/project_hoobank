@@ -10,7 +10,7 @@ import { motion } from "framer-motion";
 // import { SectionWrapper } from "../hoc";
 import { projects } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
-import { web } from "../../../project_3D_developer_portfolio/src/assets";
+// import { web } from "../../../project_3D_developer_portfolio/src/assets";
 import { TitleText } from "./CustomTexts";
 const ProjectCard = ({
   index,
