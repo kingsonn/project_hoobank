@@ -31,7 +31,7 @@ const ProjectCard = ({
   };
   return (
     <motion.div onMouseOver={handleMouseOver}
-    onMouseOut ={handleMouseOut} variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
+    onMouseOut ={handleMouseOut} variants={fadeIn("up", "spring", index * 0.5, 0.75)} whileHover={{scale: 1.05}}>
 
       <div
         options={{
@@ -43,10 +43,9 @@ const ProjectCard = ({
         className={active? "gradient-01 p-5 rounded-2xl sm:w-[360px] w-full": "bg-gray-gradient p-5 rounded-2xl sm:w-[360px] w-full"}
         // className='bg-gray-gradient p-5 rounded-2xl sm:w-[360px] w-full'
       >
-                            <StarsCanvas/>
 
         <motion.div 
-     whileHover={{scale: 1.25}}
+     
      
      className='relative w-full h-full'>
           <img

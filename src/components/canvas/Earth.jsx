@@ -1,7 +1,7 @@
 import React, { Suspense } from "react";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
-
+import scene from "../../assets/scene.png"
 import CanvasLoader from "../Loader";
 
 const Earth = () => {
@@ -11,7 +11,11 @@ const Earth = () => {
     <primitive object={earth.scene} scale={2.5} position-y={0} rotation-y={0} />
   );
 };
-
+const Fall = () => {
+  return (
+    <img src={scene} alt="" />
+  )
+}
 const EarthCanvas = () => {
   return (
     <Canvas
@@ -26,7 +30,7 @@ const EarthCanvas = () => {
         position: [-4, 3, 6],
       }}
     >
-      <Suspense fallback={<CanvasLoader />}>
+      <Suspense fallback={scene}>
         <OrbitControls
           autoRotate
           enableZoom={false}

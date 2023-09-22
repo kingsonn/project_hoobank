@@ -11,13 +11,7 @@ import { motion } from "framer-motion";
 import { EarthCanvas } from "./canvas";
 // import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
-const Earth = () => {
-  const earth = useGLTF("./planet/scene.gltf");
 
-  return (
-    <primitive object={earth.scene} scale={3.5} position-y={0} rotation-y={0} />
-  );
-};
 // function Model({ url }) {
 //   const { nodes } = useGLTF(url)
 //   return (
