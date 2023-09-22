@@ -1,16 +1,16 @@
 import React, {useState} from "react";
 // import {Tilt} from "react-tilt";
 import { motion } from "framer-motion";
-// import webdev from "../assets/webdev.png"
-// import codeedit from "../assets/codeedit.svg"
-// import das from "../assets/das.svg"
-// import { styles } from "../styles";
+import webdev from "../assets/webdev.png"
+import codeedit from "../assets/codeedit.svg"
+import das from "../assets/das.svg"
+import { styles } from "../styles";
 // import { github } from "../assets";
-// import { StarsCanvas } from "./canvas";
-// import { SectionWrapper } from "../hoc";
+import { StarsCanvas } from "./canvas";
+import { SectionWrapper } from "../hoc";
 import { projects } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
-// import { web } from "../../../project_3D_developer_portfolio/src/assets";
+import { web } from "../../../project_3D_developer_portfolio/src/assets";
 import { TitleText } from "./CustomTexts";
 const ProjectCard = ({
   index,
@@ -43,7 +43,7 @@ const ProjectCard = ({
         className={active? "gradient-01 p-5 rounded-2xl sm:w-[360px] w-full": "bg-gray-gradient p-5 rounded-2xl sm:w-[360px] w-full"}
         // className='bg-gray-gradient p-5 rounded-2xl sm:w-[360px] w-full'
       >
-            {/* <StarsCanvas/> */}
+            <StarsCanvas/>
 
         <motion.div 
      whileHover={{scale: 1.25}}

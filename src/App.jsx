@@ -22,7 +22,7 @@ const App = () => (
       <div className={`${styles.boxWidth}`}>
         {/* <Stats /> */}
         {/* <About/> */}
-        {/* <Works/> */}
+        <Works/>
         <Business />
         <div className="relative">
       <Started />
