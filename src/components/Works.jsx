@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-import {Tilt} from "react-tilt";
+// import {Tilt} from "react-tilt";
 import { motion } from "framer-motion";
 import webdev from "../assets/webdev.png"
 import codeedit from "../assets/codeedit.svg"
@@ -33,7 +33,7 @@ const ProjectCard = ({
     <motion.div onMouseOver={handleMouseOver}
     onMouseOut ={handleMouseOut} variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
       
-      <Tilt
+      <div
         options={{
           max: 45,
           scale: 1,
@@ -76,7 +76,7 @@ const ProjectCard = ({
           ))}
         </div> */}
 
-      </Tilt>
+      </div>
     </motion.div>
   );
 };
