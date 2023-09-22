@@ -26,7 +26,7 @@ const App = () => (
         <Business />
         <div className="relative">
       <Started />
-      <div className="gradient-04 z-0" />
+      <div className="hidden sm:block gradient-04 z-0" />
       <CardDeal />
 
     </div>
@@ -34,7 +34,7 @@ const App = () => (
         <div className="relative">
       
         <Billing />
-      <div className="gradient-04 z-0" />
+      <div className="hidden sm:block gradient-04 z-0" />
       
     <WhatsNew />
     </div>
