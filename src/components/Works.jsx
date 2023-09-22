@@ -43,7 +43,7 @@ const ProjectCard = ({
         className={active? "gradient-01 p-5 rounded-2xl sm:w-[360px] w-full": "bg-gray-gradient p-5 rounded-2xl sm:w-[360px] w-full"}
         // className='bg-gray-gradient p-5 rounded-2xl sm:w-[360px] w-full'
       >
-            <StarsCanvas/>
+            {/* <StarsCanvas/> */}
 
         <motion.div 
      whileHover={{scale: 1.25}}
