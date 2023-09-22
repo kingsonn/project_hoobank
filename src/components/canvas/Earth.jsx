@@ -1,6 +1,6 @@
 import React, { Suspense } from "react";
 import { Canvas } from "@react-three/fiber";
-import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
+import { OrbitControls, Preload, useGLTF, Html } from "@react-three/drei";
 import scene from "../../assets/scene.png"
 import CanvasLoader from "../Loader";
 
@@ -11,15 +11,10 @@ const Earth = () => {
     <primitive object={earth.scene} scale={2.5} position-y={0} rotation-y={0} />
   );
 };
-const Fall = () => {
-  return (
-    <img src={scene} alt="" />
-  )
-}
+
 const EarthCanvas = () => {
   return (
     <Canvas
-    className="hidden sm:block"
       shadows
       frameloop='demand'
       dpr={[1, 2]}
@@ -31,7 +26,19 @@ const EarthCanvas = () => {
         position: [-4, 3, 6],
       }}
     >
-      <Suspense fallback={scene}>
+      <Suspense fallback={ <Html
+      as='div'
+      center
+      style={{
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+        flexDirection: "column",
+      }}
+    >
+      <img className="z-45 w-[100%] h-[100%] object-contain" src={scene} alt="" />
+
+    </Html>}>
         <OrbitControls
           autoRotate
           enableZoom={false}
