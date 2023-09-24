@@ -86,17 +86,20 @@ const Works = () => {
       {/* <motion.div variants={textVariant()}>
         
       </motion.div> */}
-<TitleText title={<>Our Services</>} textStyles={"text-center mt-16"} />
+<TitleText title={<>Our Services</>} textStyles={"text-center mt-16 mb-8 font-poppins font-semibold xs:text-[48px] text-[40px] text-white xs:leading-[76.8px] leading-[66.8px] w-full"} />
+    
       <div className='w-full flex'>
         <motion.p
           variants={fadeIn("", "", 0.1, 1)}
-          className='font-poppins font-normal text-dimWhite text-[18px] leading-[30.8px] mt-3 text-[17px] mx-16 justify-center  text-center leading-[30px]'
+          className='hidden sm:block font-poppins font-normal text-dimWhite text-[18px] leading-[30.8px]  mt-3 text-[17px] mx-16 justify-center  text-center leading-[30px]'
         >
-          Following projects showcases my skills and experience through
-          real-world examples of my work. Each project is briefly described with
-          links to code repositories and live demos in it. It reflects my
-          ability to solve complex problems, work with different technologies,
-          and manage projects effectively.
+          Empowering Creativity, Data-Driven Insights, and Digital Excellence. Our mission is to provide innovative solutions that elevate your online presence, transform data into actionable strategies, and perfect your digital assets for success.
+        </motion.p>
+        <motion.p
+          variants={fadeIn("", "", 0.1, 1)}
+          className='sm:hidden font-poppins font-normal text-dimWhite text-[18px] w-full leading-[30.8px]  mt-3 text-[17px]  justify-center  text-center leading-[30px] '
+        >
+          Your Vision <br/> Our Modern Solutions
         </motion.p>
       </div>
 

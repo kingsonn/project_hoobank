@@ -22,8 +22,8 @@ const App = () => (
       <div className={`${styles.boxWidth}`}>
         {/* <Stats /> */}
         {/* <About/> */}
-        <Works/>
         <Business />
+        <Works/>
         <div className="relative">
       <Started />
       <div className="hidden sm:block gradient-04 z-0" />

@@ -131,11 +131,23 @@
   }
 }
 
-.feature-card:hover {
+/* .feature-card:hover {
   background: var(--black-gradient);
   box-shadow: var(--card-shadow);
+} */
+.feat-card:hover {
+  background: #0cb2c7;
+  
+  box-shadow: var(--card-shadow);
 }
+.oops{
+  color:#f0edec;
+}
+.oops:hover{
+  color:#000000;
+font-family: Georgia, 'Times New Roman', Times, serif;
 
+}
 .feedback-container .feedback-card:last-child {
   margin-right: 0px;
 }

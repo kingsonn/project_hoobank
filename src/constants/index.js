@@ -29,23 +29,23 @@ export const features = [
   {
     id: "feature-1",
     icon: star,
-    title: "Rewards",
+    title: "Affordable Services",
     content:
-      "The best credit cards offer some tantalizing combinations of promotions and prizes",
+      "Unlock the potential of premium digital services without the premium price tag, because top-tier doesn't have to mean expensive.",
   },
   {
     id: "feature-2",
     icon: shield,
-    title: "100% Secured",
+    title: "Highest Quality",
     content:
-      "We take proactive steps make sure your information and transactions are secure.",
+      "Our commitment to excellence ensures that every project we undertake is a masterpiece of quality, functionality, and aesthetics.",
   },
   {
     id: "feature-3",
     icon: send,
-    title: "Balance Transfer",
+    title: "Fast Turnaround",
     content:
-      "A balance transfer credit card can save you a lot of money in interest charges.",
+      "We don't just meet deadlines; we exceed expectations with swift, precision-crafted solutions allowing clients to see results sooner.",
   },
 ];
 
@@ -115,7 +115,7 @@ export const projects = [
   {
     name: "Portfolio Websites",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+    "Our specialty is crafting stunning websites that showcase your work or business. We create user-friendly, responsive sites that make a memorable online impression.",
     tags: [
       {
         name: "react",
@@ -136,7 +136,7 @@ export const projects = [
   {
     name: "Data Analytics",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+    "Unlock the power of your data with our analysis. We dive deep into numbers to uncover actionable insights, guiding smarter decisions for your business.",
     tags: [
       {
         name: "react",
@@ -157,7 +157,7 @@ export const projects = [
   {
     name: "Code Editing",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+    "Simplify website maintenance with our code editing. We optimize your code for speed, security, and bug-free performance, ensuring a seamless user experience.",
     tags: [
       {
         name: "nextjs",
@@ -242,10 +242,21 @@ export const footerLinks = [
   },
 ];
 export const startingFeatures = [
-  'Find a world that suits you and you want to enter',
-  'Enter the world by reading basmalah to be safe',
-  'No need to beat around the bush, just stay on the gas and have fun',
+  'Establish Professionalism: Showcase expertise and credibility globally.',
+  'Tailored Experience: Personalize layout, content, and branding.',
+  'Showcase Skills: Display projects, achievements, and testimonials.',
+  // 'Global Reach: Break geographical barriers and attract a wider audience.',
+  'Enhance Visibility: Optimize for search engines and attract organic traffic.',
+  'Seamless Connectivity: Enable easy networking opportunities.',
 ];
+
+
+
+
+
+
+
+
 
 export const newFeatures = [
   {

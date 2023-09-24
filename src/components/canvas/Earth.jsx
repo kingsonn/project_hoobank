@@ -15,6 +15,7 @@ const Earth = () => {
 const EarthCanvas = () => {
   return (
     <Canvas
+    className="hidden sm:block"
       shadows
       frameloop='demand'
       dpr={[1, 2]}

@@ -7,18 +7,18 @@ import { startingFeatures } from '../constants';
 import {TitleText, TypingText } from './CustomTexts';
 import { staggerContainer, fadeIn, planetVariants } from '../utils/motion';
 const StartSteps = ({ number, text }) => (
-  <div className={`${styles.flexCenter} flex-row`}>
+  <motion.div whileHover={{scale: 1.05}} className={`${styles.flexCenter} flex-row feat-card rounded-[10px]`}>
     <div
-      className={`${styles.flexCenter} w-[70px] h-[70px] rounded-[24px] bg-[#323F5D]`}
+      className={`${styles.flexCenter} ml-2 w-[35px] h-[35px] rounded-[10px] bg-[#323F5D]`}
     >
-      <p className="font-bold text-[20px] text-white">
+      <p className="font-bold text-[16px] text-white">
         {number}
       </p>
     </div>
-    <p className="flex-1 ml-[30px] font-normal text-[18px] text-[#B0B0B0] leading-[32.4px]">
+    <p className="flex-1  ml-[15px] oops font-normal  text-[18px]  ">
       {text}
     </p>
-  </div>
+  </motion.div>
 );
 
 const Started = () => (
@@ -32,12 +32,12 @@ const Started = () => (
     >
       <motion.div
         variants={planetVariants('left')}
-        className={`flex-1 ${styles.flexCenter}`}
+        className={`flex-1 ${styles.flexCenter} `}
       >
         <img
           src={devweb}
           alt="get-started"
-          className="w-[90%] h-[90%] object-contain"
+          className="md:mt-20 w-[90%] h-[90%] object-contain"
         />
       </motion.div>
       <motion.div
@@ -45,7 +45,10 @@ const Started = () => (
         className="flex-[0.75] flex justify-center flex-col"
       >
         <TypingText title="| How Metaversus Works" />
-        <TitleText title={<>Owning a portfolio website</>} />
+        {/* <TitleText title={<>Owning a portfolio website</>} /> */}
+        <h2 className={"font-poppins font-semibold xs:text-[48px] text-[40px] text-white xs:leading-[76.8px] leading-[66.8px] w-full"}>
+       Owning a portfolio website
+      </h2>
         <div className="mt-[31px] flex flex-col max-w-[370px] gap-[24px]">
           {startingFeatures.map((feature, index) => (
             <StartSteps

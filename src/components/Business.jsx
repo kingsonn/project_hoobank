@@ -1,9 +1,21 @@
 import { features } from "../constants";
 import styles, { layout } from "../style";
 import Button from "./Button";
+import React, {useState} from "react";
+ 
+const FeatureCard = ({ icon, title, content, index }) => {
+  const [active, setActive] = useState(false);
 
-const FeatureCard = ({ icon, title, content, index }) => (
-  <div className={`flex flex-row p-6 rounded-[20px] ${index !== features.length - 1 ? "mb-6" : "mb-0"} feature-card`}>
+  const handleMouseOver = () => {
+    setActive(true);
+  };
+
+  const handleMouseOut = () => {
+    setActive(false);
+  };
+
+  return(
+  <div onMouseEnter={handleMouseOver} onMouseLeave={handleMouseOut} className={`flex flex-row p-6 rounded-[20px] ${index !== features.length - 1 ? "mb-6" : "mb-0"} ${active? "gradient-01 ":"bg-gray-gradient"} feature-card`}>
     <div className={`w-[64px] h-[64px] rounded-full ${styles.flexCenter} bg-dimBlue`}>
       <img src={icon} alt="star" className="w-[50%] h-[50%] object-contain" />
     </div>
@@ -17,18 +29,16 @@ const FeatureCard = ({ icon, title, content, index }) => (
     </div>
   </div>
 );
+  }
 
 const Business = () =>  (
   <section id="features" className={layout.section}>
     <div className={layout.sectionInfo}>
       <h2 className={styles.heading2}>
-        You do the business, <br className="sm:block hidden" /> we’ll handle
-        the money.
+      We are your digital success partners 
       </h2>
       <p className={`${styles.paragraph} max-w-[470px] mt-5`}>
-        With the right credit card, you can improve your financial life by
-        building credit, earning rewards and saving money. But with hundreds
-        of credit cards on the market.
+      Our focus is on delivering high-quality websites, insightful data analysis, and optimized code efficiently and cost-effectively. Experience the perfect blend of quality and speed with us.
       </p>
 
       <Button styles={`mt-10`} />

@@ -34,7 +34,11 @@ const CardDeal = () => (
         className="flex-[0.95] flex justify-center flex-col"
       >
         <TypingText title="| Whats new?" />
-        <TitleText title={<>What's new about Metaversus?</>} />
+        {/* <TitleText title={<>What's new about Metaversus?</>} /> */}
+        <h2 className={"font-poppins font-semibold xs:text-[48px] text-[40px] text-white xs:leading-[76.8px] leading-[66.8px] w-full"}>
+        Find a better card deal <br className="sm:block hidden" /> in few easy
+        steps.
+      </h2>
         <div className="mt-[48px] flex flex-wrap justify-between gap-[24px]">
           {newFeatures.map((feature) => (
             <NewFeatures key={feature.title} {...feature} />
