@@ -27,10 +27,10 @@ const App = () => (
         <div className="relative">
       <Started />
       <div className="hidden sm:block gradient-04 z-0" />
+    <What/>
       <CardDeal />
 
     </div>
-    <What/>
         <div className="relative">
       
         <Billing />

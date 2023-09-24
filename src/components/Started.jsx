@@ -7,7 +7,7 @@ import { startingFeatures } from '../constants';
 import {TitleText, TypingText } from './CustomTexts';
 import { staggerContainer, fadeIn, planetVariants } from '../utils/motion';
 const StartSteps = ({ number, text }) => (
-  <motion.div whileHover={{scale: 1.05}} className={`${styles.flexCenter} flex-row feat-card rounded-[10px]`}>
+  <motion.div whileHover={{scale: 1.05}} className={`${styles.flexCenter} bg-gray-gradient flex-row feat-card rounded-[10px]`}>
     <div
       className={`${styles.flexCenter} ml-2 w-[35px] h-[35px] rounded-[10px] bg-[#323F5D]`}
     >

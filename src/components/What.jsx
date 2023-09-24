@@ -5,7 +5,7 @@ import {styles} from '../styles';
 import { fadeIn, staggerContainer } from '../utils/motion';
 
 const What = () => (
-  <section className={`${styles.paddings} mb-16 relative z-10`}>
+  <section className={`${styles.paddings} mb-16 mt-20 relative z-10`}>
     <div className="gradient-02 z-0" />
     <motion.div
       variants={staggerContainer}
@@ -14,7 +14,7 @@ const What = () => (
       viewport={{ once: false, amount: 0.25 }}
       className={`${styles.innerWidth} mx-auto ${styles.flexCenter} flex-col`}
     >
-      <TypingText title="| About Metaversus" textStyles="text-center text-white" />
+      <TypingText title="| About Metaversus" textStyles="text-[30px] mb-3 font-Georgia text-center text-white" />
 
       <motion.p
         variants={fadeIn('up', 'tween', 0.2, 1)}
