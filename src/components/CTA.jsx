@@ -6,7 +6,7 @@ const CTA = () => (
     <div className="flex-1 flex flex-col">
       <h2 className={styles.heading2}>Let’s try our service now!</h2>
       <p className={`${styles.paragraph} max-w-[470px] mt-5`}>
-      "Unlock the full potential of your digital presence and data insights through our innovative and modern approach. We are your trusted partners for creating stunning websites, delivering insightful analytics, and refining code for a better digital world.
+      We are your trusted partners for creating stunning websites, delivering insightful analytics, and refining code for a better digital world through our innovative and modern approach.
       </p>
     </div>
 
