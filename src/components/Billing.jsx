@@ -39,23 +39,25 @@ import { motion } from 'framer-motion';
 import gts from "../assets/get-started.png"
 import arrow from "../assets/arrow.svg"
 import {styles} from '../styles';
-import { startingFeatures } from '../constants';
+import { newFeatures } from '../constants';
 import {TitleText, TypingText } from './CustomTexts';
 import { staggerContainer, fadeIn, planetVariants } from '../utils/motion';
 import { Billing } from '.';
-const StartSteps = ({ number, text }) => (
-  <div className={`${styles.flexCenter} flex-row`}>
-    <div
-      className={`${styles.flexCenter} w-[70px] h-[70px] rounded-[24px] bg-[#323F5D]`}
-    >
-      <p className="font-bold text-[20px] text-white">
-        {number}
-      </p>
-    </div>
-    <p className="flex-1 ml-[30px] font-normal text-[18px] text-[#B0B0B0] leading-[32.4px]">
-      {text}
-    </p>
+const StartSteps = ({imgUrl, title, subtitle }) => (
+  <div className="flex-1 flex flex-col sm:max-w-[250px] min-w-[210px]">
+    
+  <div
+    className={`${styles.flexCenter} bg-[#0cb2c7] w-[70px] h-[70px] rounded-[24px] bg-[#323F5D]`}
+  >
+    <img src={imgUrl} alt="icon" className="w-1/2 h-1/2 object-contain" />
   </div>
+  <h1 className="mt-[26px] font-bold text-[24px] leading-[30.24px] text-white">
+    {title}
+  </h1>
+  <p className="flex-1 mt-[16px] font-normal text-[18px] text-[#B0B0B0] leading-[32.4px]">
+    {subtitle}
+  </p>
+</div>
 );
 
 const Billings= () => (
@@ -78,18 +80,17 @@ const Billings= () => (
         />
       </motion.div>
       <motion.div
-        variants={fadeIn('left', 'tween', 0.2, 1)}
-        className="flex-[0.75] flex justify-center flex-col"
+        variants={fadeIn('right', 'tween', 0.2, 1)}
+        className="flex-[0.95] flex justify-center flex-col"
       >
-        <TypingText title="| How Metaversus Works" />
-        <TitleText title={<>Owning a portfolio website</>} />
-        <div className="mt-[31px] flex flex-col max-w-[370px] gap-[24px]">
-          {startingFeatures.map((feature, index) => (
-            <StartSteps
-              key={feature}
-              number={`${index < 10 ? '0' : ''} ${index + 1}`}
-              text={feature}
-            />
+        <TypingText title="| Whats new?" />
+        {/* <TitleText title={<>Enhance your website</>} /> */}
+        <h2 className={"font-poppins font-semibold xs:text-[48px] text-[40px] text-white xs:leading-[76.8px] leading-[66.8px] w-full"}>
+        Enhance <span className='hidden md:inline'>and customize</span>  your <span className='hidden md:inline'>existing</span>  website 
+      </h2>
+        <div className="mt-[48px] flex flex-wrap justify-between gap-[24px]">
+          {newFeatures.map((feature) => (
+            <StartSteps key={feature.title} {...feature} />
           ))}
         </div>
       </motion.div>

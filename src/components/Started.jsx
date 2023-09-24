@@ -11,11 +11,11 @@ const StartSteps = ({ number, text }) => (
     <div
       className={`${styles.flexCenter} ml-2 w-[35px] h-[35px] rounded-[10px] bg-[#323F5D]`}
     >
-      <p className="font-bold text-[16px] text-white">
+      <span className="font-bold text-[16px] text-white">
         {number}
-      </p>
+      </span>
     </div>
-    <p className="flex-1  ml-[15px] mt-2 mb-2 oops font-normal mr-2 text-[18px]  ">
+    <p className="flex-1  ml-[15px] mt-2 mb-2 oops feat-card font-normal mr-2 text-[18px]  ">
       {text}
     </p>
   </motion.div>
@@ -47,7 +47,7 @@ const Started = () => (
         <TypingText title="| How Metaversus Works" />
         {/* <TitleText title={<>Owning a portfolio website</>} /> */}
         <h2 className={"font-poppins font-semibold xs:text-[48px] text-[40px] text-white xs:leading-[76.8px] leading-[66.8px] w-full"}>
-       Owning a portfolio website
+       Why own a portfolio website?
       </h2>
         <div className="mt-[31px] flex flex-col max-w-[370px] gap-[24px]">
           {startingFeatures.map((feature, index) => (

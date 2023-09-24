@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { newFeatures } from '../constants';
+import { analytics } from '../constants';
 import {TitleText, TypingText } from './CustomTexts';
 import { planetVariants, staggerContainer, fadeIn } from '../utils/motion';
 import {styles} from '../styles';
@@ -7,15 +7,15 @@ import arrow2 from "../assets/arrow2.svg"
 
 const NewFeatures = ({ imgUrl, title, subtitle }) => (
   <div className="flex-1 flex flex-col sm:max-w-[250px] min-w-[210px]">
-    <div
+    {/* <div
       className={`${styles.flexCenter} w-[70px] h-[70px] rounded-[24px] bg-[#323F5D]`}
     >
       <img src={imgUrl} alt="icon" className="w-1/2 h-1/2 object-contain" />
-    </div>
-    <h1 className="mt-[26px] font-bold text-[24px] leading-[30.24px] text-white">
-      Title {title}
+    </div> */}
+    <h1 className="mt-[13px] font-bold text-[24px] leading-[30.24px] text-white">
+      {title}
     </h1>
-    <p className="flex-1 mt-[16px] font-normal text-[18px] text-[#B0B0B0] leading-[32.4px]">
+    <p className="flex-1 mt-[5px] font-normal text-[18px] text-[#B0B0B0] leading-[32.4px]">
       {subtitle}
     </p>
   </div>
@@ -36,11 +36,10 @@ const CardDeal = () => (
         <TypingText title="| Whats new?" />
         {/* <TitleText title={<>What's new about Metaversus?</>} /> */}
         <h2 className={"font-poppins font-semibold xs:text-[48px] text-[40px] text-white xs:leading-[76.8px] leading-[66.8px] w-full"}>
-        Find a better card deal <br className="sm:block hidden" /> in few easy
-        steps.
+        How does data analytics help? 
       </h2>
-        <div className="mt-[48px] flex flex-wrap justify-between gap-[24px]">
-          {newFeatures.map((feature) => (
+        <div className="mt-[20px] flex flex-wrap justify-between gap-[24px]">
+          {analytics.map((feature) => (
             <NewFeatures key={feature.title} {...feature} />
           ))}
         </div>
@@ -53,7 +52,7 @@ const CardDeal = () => (
         <img
           src={arrow2}
           alt="get-started"
-          className="w-[100%] h-[100%] object-contain"
+          className="w-[100%] md:mt-20 h-[100%] object-contain"
         />
       </motion.div>
     </motion.div>

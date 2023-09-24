@@ -6,6 +6,8 @@ import arrow from "../assets/arrow.svg"
 import webdev from "../assets/webdev.png"
 import codeedit from "../assets/codeedit.png"
 import das from "../assets/das.svg"
+import screw from "../assets/screw.svg"
+import cust from '../assets/cust.svg'
 export const navLinks = [
   {
     id: "home",
@@ -258,19 +260,58 @@ export const startingFeatures = [
 
 
 
-export const newFeatures = [
+export const analytics= [
   {
     imgUrl: '/vrpano.svg',
-    title: 'A new world',
+    title: 'Informed Decision-Making',
     subtitle:
-        'we have the latest update with new world for you to try never mind',
+        'Insights for evidence-based decisions.',
   },
   {
     imgUrl: '/headset.svg',
-    title: 'More realistic',
+    title: 'Efficiency and Productivity',
     subtitle:
-        'In the latest update, your eyes are narrow, making the world more realistic than ever',
+        'Streamlined operations for enhanced productivity.',
   },
+  {
+    imgUrl: '/vrpano.svg',
+    title: 'Enhanced Customer Experience',
+    subtitle:
+        'Tailor offerings for a better customer journey.',
+  },
+  {
+    imgUrl: '/headset.svg',
+    title: 'Innovative Product Development',
+    subtitle:
+        ' Guide product improvements and innovations.',
+  },
+  {
+    imgUrl: '/vrpano.svg',
+    title: 'Targeted Marketing and Personalization',
+    subtitle:
+        'Tailor marketing for specific audiences.',
+  },
+  {
+    imgUrl: '/headset.svg',
+    title: 'Predictive Optimization',
+    subtitle:
+        'Optimize asset usage through predictions.',
+  },
+];
+export const newFeatures = [
+  {
+    imgUrl: screw,
+    title: 'Efficient Issue Resolution',
+    subtitle:
+        'We quickly identify and fix bugs in your existing website',
+  },
+  {
+    imgUrl: cust,
+    title: 'Customization',
+    subtitle:
+        'We Tailor the website to meet your specific needs and branding.',
+  },
+ 
 ];
 
 export const socialMedia = [

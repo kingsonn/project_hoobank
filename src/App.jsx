@@ -31,16 +31,16 @@ const App = () => (
       <CardDeal />
 
     </div>
+        <Testimonials />
         <div className="relative">
       
         <Billing />
       <div className="hidden sm:block gradient-04 z-0" />
       
-    <WhatsNew />
+    {/* <WhatsNew /> */}
     </div>
 
-        <Testimonials />
-        <Clients />
+        {/* <Clients /> */}
         <CTA />
         <Footer />
       </div>

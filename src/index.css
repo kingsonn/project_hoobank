@@ -137,17 +137,25 @@
 } */
 .feat-card:hover {
   background: #0cb2c7;
-  
+  color:#000000;
+ 
   box-shadow: var(--card-shadow);
+}
+.feat-card:hover p{
+  /* background: #0cb2c7; */
+  color:#000000;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  /* box-shadow: var(--card-shadow); */
 }
 .oops{
   color:#f0edec;
+  
 }
-.oops:hover{
+/* .oops:hover{
   color:#000000;
 font-family: Georgia, 'Times New Roman', Times, serif;
 
-}
+} */
 .feedback-container .feedback-card:last-child {
   margin-right: 0px;
 }
