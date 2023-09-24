@@ -18,12 +18,12 @@ export const navLinks = [
     title: "Features",
   },
   {
-    id: "product",
-    title: "Product",
+    id: "services",
+    title: "Services",
   },
   {
-    id: "clients",
-    title: "Clients",
+    id: "contact",
+    title: "Contact",
   },
 ];
 
