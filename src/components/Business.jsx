@@ -32,7 +32,7 @@ const FeatureCard = ({ icon, title, content, index }) => {
   }
 
 const Business = () =>  (
-  <section id="features" className={layout.section}>
+  <section id="features" className={`${layout.section} mx-4` }>
     <div className={layout.sectionInfo}>
       <h2 className={styles.heading2}>
       We are your digital success partners 
