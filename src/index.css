@@ -136,8 +136,15 @@
   box-shadow: var(--card-shadow);
 } */
 .feat-card:hover {
-  background: #0cb2c7;
-  color:#000000;
+  background: linear-gradient(
+    157.81deg,
+    #def9fa -43.27%,
+    #bef3f5 -21.24%,
+    #9dedf0 12.19%,
+    #7de7eb 29.82%,
+    #5ce1e6 51.94%,
+    #33bbcf 90.29%
+  );  color:#000000;
  
   box-shadow: var(--card-shadow);
 }
@@ -145,6 +152,12 @@
   /* background: #0cb2c7; */
   color:#000000;
   font-family: Georgia, 'Times New Roman', Times, serif;
+  /* box-shadow: var(--card-shadow); */
+}
+.feat-card:hover h1{
+  /* background: #0cb2c7; */
+  color:#000000;
+  /* font-family: Georgia, 'Times New Roman', Times, serif; */
   /* box-shadow: var(--card-shadow); */
 }
 .oops{

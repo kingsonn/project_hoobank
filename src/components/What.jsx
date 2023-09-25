@@ -14,7 +14,7 @@ const What = () => (
       viewport={{ once: false, amount: 0.25 }}
       className={`${styles.innerWidth} mx-auto ${styles.flexCenter} flex-col`}
     >
-      <TypingText title="| What's a portfolio website |" textStyles="text-[30px] mb-3 font-Georgia text-center text-white" />
+      <TypingText title="| What's a portfolio website |" textStyles="text-[30px] mb-3 font-poppins text-center text-white" />
 
       <motion.p
         variants={fadeIn('up', 'tween', 0.2, 1)}

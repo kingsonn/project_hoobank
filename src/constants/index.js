@@ -248,7 +248,7 @@ export const startingFeatures = [
   'Tailored Experience: Personalize layout, content, and branding.',
   'Showcase Skills: Display projects, achievements, and testimonials.',
   // 'Global Reach: Break geographical barriers and attract a wider audience.',
-  'Enhance Visibility: Optimize for search engines and attract organic traffic.',
+  'High Visibility: Optimize for search engines and attract organic traffic.',
   'Seamless Connectivity: Enable easy networking opportunities.',
 ];
 

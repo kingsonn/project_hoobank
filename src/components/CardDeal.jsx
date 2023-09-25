@@ -6,19 +6,19 @@ import {styles} from '../styles';
 import arrow2 from "../assets/arrow2.svg"
 
 const NewFeatures = ({ imgUrl, title, subtitle }) => (
-  <div className="flex-1 flex flex-col sm:max-w-[250px] min-w-[210px]">
+  <motion.div whileHover={{scale: 1.05}} className="flex-1  flex flex-col  bg-gray-gradient feat-card rounded-[20px] pt-0 p-3 min-w-[210px]">
     {/* <div
       className={`${styles.flexCenter} w-[70px] h-[70px] rounded-[24px] bg-[#323F5D]`}
     >
       <img src={imgUrl} alt="icon" className="w-1/2 h-1/2 object-contain" />
     </div> */}
-    <h1 className="mt-[13px] font-bold text-[24px] leading-[30.24px] text-white">
+    <h1 className="font-poppins mt-[13px] font-bold text-[24px] leading-[30.24px] text-white">
       {title}
     </h1>
     <p className="flex-1 mt-[5px] font-normal text-[18px] text-[#B0B0B0] leading-[32.4px]">
       {subtitle}
     </p>
-  </div>
+  </motion.div>
 );
 const CardDeal = () => (
   <section className={`${styles.paddings}  pb-16 mb-16 z-10`}>
