@@ -14,6 +14,7 @@ import { TypingText, TitleText } from './CustomTexts';
 import WhatsNew from "./WhatsNew";
 import Started from "./Started"
 import What from "./What";
+import Contact from "./Contact";
 export {
   Navbar,
   Billing,
@@ -32,4 +33,5 @@ export {
   WhatsNew,
   Started,
   What,
+  Contact,
 };

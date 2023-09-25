@@ -1,5 +1,5 @@
 import styles from "./style";
-import { Billing, Business, CardDeal, Clients, CTA, Footer, Navbar, Stats, Testimonials, Hero, About, Works, WhatsNew, Started, What } from "./components";
+import { Billing, Business, CardDeal, Clients, CTA, Footer, Navbar, Stats, Testimonials, Hero, About, Works, WhatsNew, Started, What, Contact } from "./components";
 import { StarsCanvas } from "./components/canvas";
 const App = () => (
   <div className="bg-primary w-full overflow-hidden">
@@ -42,6 +42,7 @@ const App = () => (
 
         {/* <Clients /> */}
         <CTA />
+        <Contact/>
         <Footer />
       </div>
     </div>
