@@ -42,7 +42,7 @@ Portfolio websites serve as digital resumes for individuals, showcasing skills a
         className="hidden sm:block mt-[8px] font-normal sm:text-[32px] text-[20px] text-center text-white"
       >
       Portfolio websites are crucial <span className="font-extrabold text-white">digital assets</span> for individuals and businesses. For individuals, they serve as <span className="font-extrabold text-white">online resumes</span>, <span className="font-extrabold text-white">showcasing skills</span> and <span className="font-extrabold text-white">work</span>. For businesses, they're powerful <span className="font-extrabold text-white">marketing tools</span>, <span className="font-extrabold text-white">displaying products</span>, <span className="font-extrabold text-white">services</span>, <span className="font-extrabold text-white">and successes</span>, <span className="font-extrabold text-white">attracting customers</span>, and engaging the audience. These sites create a <span className="font-extrabold text-white">professional online presence</span>, building credibility and fostering growth.
-        Owning a portfolio website offers numerous benefits, especially for professionals and businesses in creative fields or those looking to showcase their wo
+        Owning a portfolio website offers numerous benefits, especially for professionals and businesses in creative fields or those looking to showcase their work
         </motion.p>
       {/* <motion.img
         variants={fadeIn('up', 'tween', 0.3, 1)}
