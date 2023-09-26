@@ -37,7 +37,7 @@
 
 import { motion } from 'framer-motion';
 import gts from "../assets/get-started.png"
-import arrow from "../assets/arrow.svg"
+import arrow from "../assets/arrow.png"
 import {styles} from '../styles';
 import { newFeatures } from '../constants';
 import {TitleText, TypingText } from './CustomTexts';
@@ -75,8 +75,9 @@ const Billings= () => (
       >
         <img
           src={arrow}
+          sizes=''
           alt="get-started"
-          className="w-[100%] h-[100%] object-contain"
+          className="w-full h-auto object-contain"
         />
       </motion.div>
       <motion.div

@@ -3,7 +3,7 @@ import { analytics } from '../constants';
 import {TitleText, TypingText } from './CustomTexts';
 import { planetVariants, staggerContainer, fadeIn } from '../utils/motion';
 import {styles} from '../styles';
-import arrow2 from "../assets/arrow2.svg"
+import arrow2 from "../assets/arrow2.png"
 
 const NewFeatures = ({ imgUrl, title, subtitle }) => (
   <motion.div whileHover={{scale: 1.05}} className="flex-1  flex flex-col  bg-gray-gradient feat-card rounded-[20px] pt-0 p-3 min-w-[210px]">
@@ -21,7 +21,7 @@ const NewFeatures = ({ imgUrl, title, subtitle }) => (
   </motion.div>
 );
 const CardDeal = () => (
-  <section className={`${styles.paddings}  pb-16 mb-16 z-10`}>
+  <section className={`${styles.paddings}  pb-16  z-10`}>
     <motion.div
       variants={staggerContainer}
       initial="hidden"
@@ -52,7 +52,7 @@ const CardDeal = () => (
         <img
           src={arrow2}
           alt="get-started"
-          className="w-[100%] md:mt-20 h-[100%] object-contain"
+          className="w-[100%] mt-20 h-auto object-contain"
         />
       </motion.div>
     </motion.div>

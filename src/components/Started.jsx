@@ -1,7 +1,7 @@
 
 import { motion } from 'framer-motion';
 import gts from "../assets/get-started.png"
-import devweb from "../assets/devweb.svg"
+import devweb from "../assets/devweb.png"
 import {styles} from '../styles';
 import { startingFeatures } from '../constants';
 import {TitleText, TypingText } from './CustomTexts';
@@ -37,7 +37,7 @@ const Started = () => (
         <img
           src={devweb}
           alt="get-started"
-          className="md:mt-20 w-[90%] h-[90%] object-contain"
+          className=" w-[90%] h-auto object-contain"
         />
       </motion.div>
       <motion.div
