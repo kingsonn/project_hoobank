@@ -248,7 +248,7 @@ export const startingFeatures = [
   'Tailored Experience: Personalize layout, content, and branding.',
   'Showcase Skills: Display projects, achievements, and testimonials.',
   // 'Global Reach: Break geographical barriers and attract a wider audience.',
-  'High Visibility: Optimize for search engines and attract organic traffic.',
+  // 'High Visibility: Optimize for search engines and attract organic traffic.',
   'Seamless Connectivity: Enable easy networking opportunities.',
 ];
 
@@ -263,40 +263,29 @@ export const startingFeatures = [
 export const analytics= [
   {
     imgUrl: '/vrpano.svg',
-    title: 'Informed Decision-Making',
+    title: 'Data-Driven Decisions',
     subtitle:
-        'Insights for evidence-based decisions.',
+        'Use insights for evidence-based decision-making, guiding operations, and product development.',
   },
   {
     imgUrl: '/headset.svg',
-    title: 'Efficiency and Productivity',
+    title: 'Enhancing Efficiency',
     subtitle:
-        'Streamlined operations for enhanced productivity.',
+        'Streamline operations to boost productivity while optimizing asset usage through predictions.',
   },
   {
     imgUrl: '/vrpano.svg',
-    title: 'Enhanced Customer Experience',
+    title: 'Customer-Centric Approach',
     subtitle:
-        'Tailor offerings for a better customer journey.',
+        'Tailor offerings and marketing for a better customer experience and targeted personalization.',
   },
   {
     imgUrl: '/headset.svg',
-    title: 'Innovative Product Development',
+    title: 'Innovation Enablement',
     subtitle:
-        ' Guide product improvements and innovations.',
+        'Drive innovation by guiding product improvements and catering to specific audience needs.',
   },
-  {
-    imgUrl: '/vrpano.svg',
-    title: 'Targeted Marketing and Personalization',
-    subtitle:
-        'Tailor marketing for specific audiences.',
-  },
-  {
-    imgUrl: '/headset.svg',
-    title: 'Predictive Optimization',
-    subtitle:
-        'Optimize asset usage through predictions.',
-  },
+
 ];
 export const newFeatures = [
   {

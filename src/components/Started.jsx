@@ -16,7 +16,7 @@ const StartSteps = ({ number, text }) => (
         {number}
       </span>
     </div>
-    <p className="flex-1  ml-[15px] mt-2 mb-2 oops feat-card font-normal mr-2 text-[18px]  ">
+    <p className="flex-1  ml-[15px] mt-2 mb-2 oops feat-card font-poppins mr-2 text-[18px]  ">
       {text}
     </p>
   </motion.div>
@@ -63,7 +63,7 @@ const Started = () => (
         <h2 className={"font-poppins font-semibold xs:text-[48px] text-[40px] text-white xs:leading-[76.8px] leading-[66.8px] w-full"}>
        Why own a portfolio website?
       </h2>
-        <div className="mt-[31px] flex flex-col max-w-[370px] gap-[24px]">
+        <div className="mt-[31px] flex flex-col gap-[24px]">
           {startingFeatures.map((feature, index) => (
             <StartSteps
               key={feature}

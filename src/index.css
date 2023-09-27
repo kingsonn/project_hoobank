@@ -178,7 +178,7 @@
 .feat-card:hover p{
   /* background: #0cb2c7; */
   color:#000000;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  /* font-family: Georgia, 'Times New Roman', Times, serif; */
   /* box-shadow: var(--card-shadow); */
 }
 .feat-card:hover h1{
