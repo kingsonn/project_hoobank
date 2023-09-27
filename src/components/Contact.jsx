@@ -1,8 +1,8 @@
 import React, { useRef, useState } from "react";
 import { motion } from "framer-motion";
 // import emailjs from "@emailjs/browser";
-import { ComputersCanvas } from "./canvas";
-
+// import { ComputersCanvas } from "./canvas";
+// import axios from "axios";
 import { styles } from "../styles";
 // import { EarthCanvas } from "./canvas";
 import { SectionWrapper } from "../hoc";
@@ -28,42 +28,68 @@ const Contact = () => {
     });
   };
 
-  // const handleSubmit = (e) => {
-  //   e.preventDefault();
-  //   setLoading(true);
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    setLoading(true);
+   
+    const requestOptions = {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ 
+            email: form.email,
+        due: form.name,
+        task: form.message
+        })
+    };
+    fetch('https://prod-71.eastus.logic.azure.com:443/workflows/06afadc15b914169ac1955fd347b23e6/triggers/manual/paths/invoke?api-version=2016-10-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=Zd10pn0zDqmZamJJfGYiyAsxt-HdEgTUOIsRcCrA9DY', requestOptions)
+        .then(response => {
+            setLoading(false)
+            alert("Thank you. I will get back to you as soon as possible.");
+            setForm({
+                        name: "",
+                        email: "",
+                        message: "",
+                      });
+        })
+        .catch(error => {
+        setLoading(false);
+          console.error(error);
 
-  //   emailjs
-  //     .send(
-  //       import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
-  //       import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
-  //       {
-  //         from_name: form.name,
-  //         to_name: "JavaScript Mastery",
-  //         from_email: form.email,
-  //         to_email: "sujata@jsmastery.pro",
-  //         message: form.message,
-  //       },
-  //       import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
-  //     )
-  //     .then(
-  //       () => {
-  //         setLoading(false);
-  //         alert("Thank you. I will get back to you as soon as possible.");
+          alert("Ahh, something went wrong. Please try again.");
+        });
 
-  //         setForm({
-  //           name: "",
-  //           email: "",
-  //           message: "",
-  //         });
-  //       },
-  //       (error) => {
-  //         setLoading(false);
-  //         console.error(error);
+    // emailjs
+    //   .send(
+    //     import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
+    //     import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
+    //     {
+    //       from_name: form.name,
+    //       to_name: "JavaScript Mastery",
+    //       from_email: form.email,
+    //       to_email: "sujata@jsmastery.pro",
+    //       message: form.message,
+    //     },
+    //     import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
+    //   )
+    //   .then(
+    //     () => {
+    //       setLoading(false);
+    //       alert("Thank you. I will get back to you as soon as possible.");
 
-  //         alert("Ahh, something went wrong. Please try again.");
-  //       }
-  //     );
-  // };
+    //       setForm({
+    //         name: "",
+    //         email: "",
+    //         message: "",
+    //       });
+    //     },
+    //     (error) => {
+    //       setLoading(false);
+    //       console.error(error);
+
+    //       alert("Ahh, something went wrong. Please try again.");
+    //     }
+    //   );
+  };
 
   return (
     <div
@@ -79,7 +105,7 @@ const Contact = () => {
         <p className={styles.sectionSubText}>Get in touch</p>
         <form
           ref={formRef}
-        //   onSubmit={handleSubmit}
+          onSubmit={handleSubmit}
           className='mt-12 flex flex-col gap-8'
         >
           <label className='flex flex-col'>
@@ -117,6 +143,7 @@ const Contact = () => {
           </label>
 
           <button
+          
             type='submit'
             className='py-3 px-10 font-poppins font-medium text-[20px] text-primary bg-blue-gradient rounded-[10px] outline-none w-fit'
           >
