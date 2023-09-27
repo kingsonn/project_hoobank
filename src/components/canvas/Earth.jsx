@@ -27,19 +27,7 @@ const EarthCanvas = () => {
         position: [-4, 3, 6],
       }}
     >
-      <Suspense fallback={ <Html
-      as='div'
-      center
-      style={{
-        display: "flex",
-        justifyContent: "center",
-        alignItems: "center",
-        flexDirection: "column",
-      }}
-    >
-      <img className="z-45 w-[100%] h-[100%] object-contain" src={scene} alt="" />
-
-    </Html>}>
+      <Suspense fallback={ <CanvasLoader/>}>
         <OrbitControls
           autoRotate
           enableZoom={false}
