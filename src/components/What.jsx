@@ -35,14 +35,14 @@ const What = () => (
         <span className="font-extrabold text-white">explore</span> the madness
         of the metaverse by scrolling down */}
         
-Portfolio websites serve as digital resumes for individuals, showcasing skills and talents to potential employers or clients, while businesses use them as potent marketing tools to display offerings, build credibility, and engage with their audience, ultimately fostering growth and profitability.
+Portfolio websites serve as <span className="font-extrabold text-white">digital resumes</span> for individuals, showcasing <span className="font-extrabold text-white">skills and talents</span> to potential employers or clients, while businesses use them as <span className="font-extrabold text-white">potent marketing tools</span> to <span className="font-extrabold text-white">display offerings, build credibility, and engage</span> with their audience, ultimately <span className="font-extrabold text-white">fostering growth and profitability</span>.
       </motion.p>
       <motion.p
         variants={fadeIn('up', 'tween', 0.2, 1)}
         className="hidden sm:block mt-[8px] font-normal sm:text-[32px] text-[20px] text-center text-white"
       >
       Portfolio websites are crucial <span className="font-extrabold text-white">digital assets</span> for individuals and businesses. For individuals, they serve as <span className="font-extrabold text-white">online resumes</span>, <span className="font-extrabold text-white">showcasing skills</span> and <span className="font-extrabold text-white">work</span>. For businesses, they're powerful <span className="font-extrabold text-white">marketing tools</span>, <span className="font-extrabold text-white">displaying products</span>, <span className="font-extrabold text-white">services</span>, <span className="font-extrabold text-white">and successes</span>, <span className="font-extrabold text-white">attracting customers</span>, and engaging the audience. These sites create a <span className="font-extrabold text-white">professional online presence</span>, building credibility and fostering growth.
-        Owning a portfolio website offers numerous benefits, especially for professionals and businesses in creative fields or those looking to showcase their work
+        Owning a portfolio website offers numerous benefits, especially for professionals and businesses in creative fields or those looking to showcase their work.
         </motion.p>
       {/* <motion.img
         variants={fadeIn('up', 'tween', 0.3, 1)}

@@ -44,7 +44,8 @@ import {TitleText, TypingText } from './CustomTexts';
 import { staggerContainer, fadeIn, planetVariants } from '../utils/motion';
 import { Billing } from '.';
 const StartSteps = ({imgUrl, title, subtitle }) => (
-  <motion.div whileHover={{scale: 1.05}} className="flex-1 bg-gray-gradient rounded-[24px] feat-card p-3 flex flex-col  min-w-[210px]">
+  <>
+  <motion.div whileHover={{scale: 1.05}} className="flex-1 bg-gray-gradient rounded-[24px] yolo sm:hidden p-3 flex flex-col  min-w-[210px]">
     
   <div
     className={`${styles.flexCenter} bg-[#0cb2c7] w-[70px] h-[70px] rounded-[24px] `}
@@ -58,6 +59,21 @@ const StartSteps = ({imgUrl, title, subtitle }) => (
     {subtitle}
   </p>
 </motion.div>
+  <motion.div whileHover={{scale: 1.05}} className="flex-1 bg-gray-gradient rounded-[24px] hidden sm:block feat-card p-3 flex flex-col  min-w-[210px]">
+    
+  <div
+    className={`${styles.flexCenter} bg-[#0cb2c7] w-[70px] h-[70px] rounded-[24px] `}
+  >
+    <img src={imgUrl} alt="icon" className="w-1/2 h-1/2 object-contain" />
+  </div>
+  <h1 className="mt-[26px] font-bold text-[24px] leading-[30.24px] text-white">
+    {title}
+  </h1>
+  <p className="flex-1 mt-[16px] font-normal text-[18px] text-[#B0B0B0] leading-[32.4px]">
+    {subtitle}
+  </p>
+</motion.div>
+</>
 );
 
 const Billings= () => (
