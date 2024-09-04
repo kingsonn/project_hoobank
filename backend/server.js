@@ -7,7 +7,7 @@ app.use(cors());
 app.use(express.json()); // To parse JSON request bodies
 
 // Define your API routes here
-app.post('/api/hello', async(req, res) => {
+app.get('/api/hello', async(req, res) => {
   try {
   
     const body = {
