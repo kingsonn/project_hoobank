@@ -42,6 +42,7 @@ const CTA = () => {
     const handleTransaction = async () => {
       try {
         const response = await fetch('/api/hello', { // Adjust the endpoint if needed
+          method: 'POST',
           body: JSON.stringify('')
         });
   
