@@ -16,8 +16,8 @@ app.post('/api/hello', async(req, res) => {
             key: "rdYVuzIyWXg9"
         },
         key: "hangjcvgnnnnnnnnn",
-        email: "customehhhr@partnero.com",
-        name: "Parntnero"
+        email: "customelkmklmlkmlkhhhr@partnero.com",
+        name: "Parntjljklmnero"
     
   }
     const response = await fetch("https://api.partnero.com/v1/customers", {

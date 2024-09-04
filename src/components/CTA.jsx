@@ -57,7 +57,7 @@ const CTA = () => {
         console.log(data); 
       } catch (error) {
         console.error('Error recording transaction:', error);
-        setTransactionStatus({ success: false, message: 'Error recording transaction' });
+        // setTransactionStatus({ success: false, message: 'Error recording transaction' });
       }
     };
   
