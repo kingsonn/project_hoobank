@@ -39,14 +39,14 @@ const CTA = () => {
   //   } 
   // };
   
-    const handleTransaction = async (transactionData) => {
+    const handleTransaction = async () => {
       try {
         const response = await fetch('/api/hello', { // Adjust the endpoint if needed
           method: 'POST',
           headers: {
             'Content-Type': 'application/json'
           },
-          body: JSON.stringify(transactionData)
+          body: JSON.stringify('')
         });
   
         if (!response.ok) { // Check if the response status is not OK (e.g., 4xx or 5xx)
