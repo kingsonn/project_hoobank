@@ -41,10 +41,7 @@ const CTA = () => {
   
     const handleTransaction = async () => {
       try {
-        const response = await fetch('/api/hello', { // Adjust the endpoint if needed
-          method: 'POST',
-          body: JSON.stringify('')
-        });
+        const response = await fetch('/api/hello');
   
         if (!response.ok) { // Check if the response status is not OK (e.g., 4xx or 5xx)
           throw new Error('Network response was not ok');

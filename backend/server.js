@@ -5,7 +5,7 @@ const port = process.env.PORT || 3001; // Use Vercel's assigned port or a defaul
 
 app.use(cors());
 app.use(express.json()); // To parse JSON request bodies
-
+app.use(express.static(path.join(__dirname,'/dist')))
 // Define your API routes here
 app.get('/api/hello', async(req, res) => {
   try {
